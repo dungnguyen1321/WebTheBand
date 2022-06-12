@@ -1,0 +1,94 @@
+.modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal.open {
+  display: flex;
+}
+
+.modal .modal-container {
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 64px);
+  min-height: 200px;
+  animation: modalComeIn ease 0.3s;
+}
+.modal .modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 12px;
+}
+.modal .modal-close:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+}
+
+.modal .modal-header {
+  height: 130px;
+  background-color: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+.modal-header .modal-icon-bag {
+  margin-right: 16px;
+}
+.modal .modal-body {
+  padding: 16px;
+}
+.modal .modal-label {
+  display: block;
+  font-size: 15px;
+}
+
+.modal .modal-input {
+  font-size: 15px;
+  padding: 10px;
+  display: block;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 24px;
+  margin-top: 15px;
+}
+.modal .buy-btn {
+  color: #fff;
+  background-color: #009688;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 18px;
+}
+.modal .buy-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal .modal-footer {
+  padding: 16px;
+  float: right;
+}
+.modal .modal-footer a {
+  color: #2196f3;
+}
+
+@keyframes modalComeIn {
+  from {
+    transform: translateY(-140px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,111 @@
+@media (min-width: 64em) {
+  #header .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .place-btn {
+        padding: 15px 16px;
+    }
+
+    #content .contact-content .contact-info {
+        line-height: 1.6;
+    }
+
+    .contact-form .form-control {
+        padding: 18px;
+    }
+    .form-submit-btn {
+        font-size: 18px;
+    }
+
+
+    #footer .socials-list {
+        font-size: 48px;
+
+    } 
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px  0;
+        display: inline-block;
+    }
+}
+
+/* Tablet  */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+   #header .mobile-menu-btn {
+    display: none;
+   }
+}
+
+/* mobile */
+@media (max-width: 46.1875em) {
+    /* Phan dung chung */
+    .s-full-width {
+        width: 100%;
+    }
+    .s-col-full {
+        width:100%
+    }
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav >li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav >li:first-child {
+        display: inline-block;
+    }
+    #nav .subnav {
+        position:initial;
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 42px
+    }
+
+    #content .member-item {
+        margin-top: 32px;
+        width: 100%;
+    }
+    #content .member-img {
+        width:60%;
+
+    }
+
+    #content .place-item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    
+    #content .contact-form {
+        margin-top: 32px;
+    }
+   
+}
+
